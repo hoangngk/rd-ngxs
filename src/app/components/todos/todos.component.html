@@ -1,0 +1,10 @@
+<div class="container">
+  <div class="add-todo">
+    <button mat-raised-button
+            color="primary">Add Todo</button>
+  </div>
+  <div class="todos">
+    <app-todo-item [todo]="item"
+                   *ngFor="let item of todos | async"></app-todo-item>
+  </div>
+</div>

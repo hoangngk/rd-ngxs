@@ -1,0 +1,10 @@
+<div class="container">
+  <div class="title">
+    {{todo.title}}
+  </div>
+  <div class="action">
+    <button mat-raised-button
+            color="warning"
+            (click)="deleteTodo(todo.id)">X</button>
+  </div>
+</div>
